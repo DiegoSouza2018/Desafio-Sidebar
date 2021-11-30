@@ -1,0 +1,164 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root{
+    --body-bg-color: #dce4e3;
+    --green: #18c29c;
+    --light-green: #8ed7c6;
+    --light-grey: #dce4e3;
+    --text-color: #084236;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+body{
+    min-width: 100vw;
+    overflow-x: hidden;
+    background: var(--body-bg-color);
+}
+
+.dashboard-area{
+    position: relative;
+    width: 100%;
+}
+
+.sidebar{
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background: var(--green);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar.close{
+    width: 90px;
+    height: 100%;
+    background: var(--green);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.top-sidebar{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 15px;
+    padding-right: 0;
+}
+
+.top-sidebar .logo img{
+    height: 30px;
+}
+
+.top-sidebar .toggle img{
+    height: 25px;
+}
+
+.navigation{
+    margin: 0 15px;
+}
+
+.navigation ul{
+    list-style: none;
+}
+
+.navigation ul li{
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.navigation ul li a{
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    overflow-x: hidden;
+}
+
+.navigation ul li:hover,
+.navigation ul li.hovered{
+    background: var(--light-green);
+}
+
+.navigation ul li a img{
+    margin-right: 15px;
+}
+
+.bot-sidebar{
+    background-color: var(--light-green);
+    padding: 10px 15px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile{
+    height: 45px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.profile-photo{
+    height: 100%;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.profile-details h6{
+    font-weight: 500;
+}
+
+.bot-sidebar .logout img{
+    height: 25px;
+}
+
+.logout.active{
+    padding-left: 15px;
+}
+
+main{
+    position: absolute;
+    width: calc(100% - 300px);
+    left: 300px;
+    min-height: 100vh;
+    overflow-x: auto;
+}
+
+main.active{
+    width: calc(100% - 90px);
+    left: 90px;
+}
+
+header h2{
+    margin-left: 15px;
+    margin-top: 15px;
+    letter-spacing: 1px;
+}
+
+.hidden{
+    display: none;
+}
+
+.sidebar,
+.logo,
+.profile,
+.logout,
+main{
+    transition: 0.5s;
+}
