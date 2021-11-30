@@ -2,5 +2,8 @@
 
 **Link para desafio**: [Desafio](https://efficient-sloth-d85.notion.site/Desafio-Sidebar-f2251eb4976941eb958326ea327ffeb9)
 
-![Sidebar OPEN](layout/Open.jpg)
-![Sidebar CLOSE](layout/Close.jpg)
+## OPEN:
+![](layout/Open.jpg)
+
+## CLOSE:
+![](layout/Close.jpg)
